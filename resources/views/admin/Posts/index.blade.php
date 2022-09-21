@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
    <div class="row py-5">
-      <div class="col-8 offset-2">
+      <div class="col-10 offset-1">
          <table class="table table-hover">
             <thead>
               <tr>
@@ -11,8 +11,8 @@
                 <th scope="col">Author</th>
                 <th scope="col">Title</th>
                 <th scope="col">Date</th>
-                <th></th>
-                <th></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
