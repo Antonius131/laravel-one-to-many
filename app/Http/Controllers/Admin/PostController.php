@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Post;
 use DateTime;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -41,6 +42,7 @@ class PostController extends Controller
         $data = $request->all();
 
         $data['date'] = new DateTime();
+        $data['user_id'] = Auth::user()->id;
         Post::create($data);
 
         return redirect()->route('admin.Posts.index');
