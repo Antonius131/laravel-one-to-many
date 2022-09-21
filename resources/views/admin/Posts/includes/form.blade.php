@@ -1,8 +1,8 @@
-<div class="mb-3">
+{{-- <div class="mb-3">
    <label for="input-autor" class="form-label">Author</label>
    <input type="text" name="author" class="form-control" id="input-autor"
    value="{{ request()->routeIs('admin.posts.edit') ? $post->author : '' }}">
-</div>
+</div> --}}
 <div class="mb-3">
    <label for="input-title" class="form-label">Title</label>
    <input type="text" name="title" class="form-control" id="input-title"
