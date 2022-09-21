@@ -15,7 +15,6 @@ class PostsTableSeeder extends Seeder
     {
         for ($i=0; $i<50; $i++) { 
             $newPost = new Post();
-            $newPost->author = $faker->name();
             $newPost->title = $faker->realText(30);
             $newPost->article_text = $faker->paragraph(4, true);
             $newPost->date = $faker->dateTimeThisYear();
