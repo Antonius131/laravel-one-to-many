@@ -45,7 +45,7 @@ class PostController extends Controller
         $data['user_id'] = Auth::user()->id;
         Post::create($data);
 
-        return redirect()->route('admin.Posts.index');
+        return redirect()->route('admin.posts.index');
     }
 
     /**
